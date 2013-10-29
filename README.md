@@ -1,4 +1,4 @@
-<h1>Working through Tango with Django textbook by Leif Azzopardi.</h1>
+<h3>Working through Tango with Django textbook by Leif Azzopardi.</h3>
 
 <b>This can be found at:</b> http://www.tangowithdjango.com/book/index.html
 <br>
