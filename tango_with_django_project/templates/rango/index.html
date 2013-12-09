@@ -9,11 +9,21 @@
     </head>
 
     <body>
-        <h1>Rango says...</h1>
-        hello world! <strong>{{ boldmessage }}</strong>
-	
+        <h1>Rango says...</h1>hello world!	
 	cats are a proud race and nation.
 	<img src="{% static "rangofish.jpg" %}" alt="Pic of our Glorious Leader. Fish. Screw Rango." />
+    
+	{% if categories %}
+		<ul>
+			{%for category in categories %}
+			<li>{{ category.name }}</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<strong> There are no categories present.</strong>
+	{% endif %}
+
+	<a href="/rango/about/">About</a>
     </body>
 
 </html>
