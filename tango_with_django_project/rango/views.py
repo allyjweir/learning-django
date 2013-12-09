@@ -19,7 +19,7 @@ def about(request):
 
 def category(request, category_name_url):
     context = RequestContext(request)
-    category_name = category_name_irl.replace('_',' ')
+    category_name = category_name_url.replace('_',' ')
     context_dict = {'category_name' : category_name}
 
     try:
