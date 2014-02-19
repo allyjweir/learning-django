@@ -179,4 +179,8 @@ def user_logout(request):
 
     # Take the user back to the homepage.
     return HttpResponseRedirect('/rango/')
+    
+def about(request):
+	context = RequestContext(request)
+	return render_to_response('rango/about.html', {}, context)
 

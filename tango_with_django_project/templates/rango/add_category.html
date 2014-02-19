@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Rango</title>
-    </head>
+{% extends 'rango/base.html' %}
 
-    <body>
-        <h1>Add a Category</h1>
+{% block title %}Rango - Add a new category{% endblock %}
+
+{% block body_block %}
+            <h1>Add a Category</h1>
 
         {% if category_name_url %}
             <div style="color: red;">The specified category does not exist!</div>
@@ -26,8 +24,4 @@
                 <input type="submit" name="submit" value="Create Category" />
             </form>
         {% endif %}
-
-    </body>
-
-</html>
-
+{% endblock %}
